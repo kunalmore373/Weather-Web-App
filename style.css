@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+body {
+    background-color: #222;
+}
+
+
+.container {
+
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    text-align: center;
+    padding: 40px 35px;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.search input {
+    border: 20px;
+    border-radius: 30px;
+    height: 30px;
+    width: 75%;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    color: #555;
+    background: #ebfffc;
+}
+
+.search button {
+    margin-right: 20px;
+    border: 0;
+    background: #ebfffc;
+    outline: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+}
+
+.search button img {
+    height: 16px;
+    width: 16px;
+    margin-top: 2px;
+}
+
+.weather{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.weather-img img{
+    width: 200px;
+    height: 200px;
+}
+
+.temp {
+    font-size: 3.5rem;
+    padding: 9px
+    font-weight: bolder;
+}
+
+.city{
+    font-size: 2rem;
+    font-weight: lighter;
+    padding: 5px;
+}
+
+.details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center  ;   
+    padding: 0 20px; 
+}
+
+
+
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    
+}
+
+.col img {
+    width: 50px;
+    /* margin-right: 10px; */
+    height: 45px;
+    width: 50px;
+}
+
+.details p {
+    font-size: medium;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.humidity-detail{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wind-img img{
+    margin-left: 15px;
+}
+
+.wind-detail{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.x{
+    width: 83px;
+    height: 19px;
+}
+
+.humidity{
+    width: 69px;
+    height: 19px;
+}
+
+.wind{
+    width: 69px;
+    height: 19px;
+}
+
+.col p { 
+    font-weight: 200;
+}
+
+/* //changes according to chat gpt  */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 1rem;
+    }
+    .weather {
+        flex-direction: column;
+    }
+}
+
+.weather-img img {
+    transition: transform 0.3s;
+}
+.weather-img img:hover {
+    transform: scale(1.1);
+}
